@@ -32,7 +32,7 @@ const App = () => {
               component={ProfileScreen}
               options={{
                 tabBarIcon: ({ color }) => (
-                  <MaterialCommunityIcons name="cog" color={color} size={26} />
+                  <MaterialCommunityIcons name="account" color={color} size={26} />
                 ),
               }}
             />
@@ -41,7 +41,7 @@ const App = () => {
               component={MapsScreen}
               options={{
                 tabBarIcon: ({ color }) => (
-                  <MaterialCommunityIcons name="cog" color={color} size={26} />
+                  <MaterialCommunityIcons name="google-maps" color={color} size={26} />
                 ),
               }}
             />
