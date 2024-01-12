@@ -31,8 +31,8 @@ function ProfileScreen() {
 
   return (
     <View style={styles.container}>
-      {submittedValues.name && submittedValues.hobby && ( // Conditionally display values
-        <View>
+      {submittedValues.name && submittedValues.hobby && (
+        <View style={styles.infoContainer}>
           <Text style={styles.infoText}>Name: {submittedValues.name}</Text>
           <Text style={styles.infoText}>Hobby: {submittedValues.hobby}</Text>
         </View>
@@ -59,13 +59,24 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'space-around',
+    justifyContent: 'space',
     padding: 20,
   },
   input: {
     borderWidth: 1,
     padding: 10,
-    marginBottom: 10,
+    marginBottom: 20,
+    borderRadius: 10,
+    width: '90%',
+  },
+  submitButton: {
+    marginTop: 10,
+    width: '90%',
+    borderRadius: 10,
+  },
+  infoContainer: {
+    marginBottom: 20,
+    marginTop: 20,
   },
   infoText: {
     fontSize: 18,
